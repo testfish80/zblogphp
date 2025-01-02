@@ -31,6 +31,8 @@ switch ($zbp->option['ZC_DATABASE_TYPE']) {
 	case 'sqlite3':
 		$order = array('random()'=>'');
 	break;
+	default:
+		$order = array('random()'=>'');
 }
 
 if(ZC_VERSION_COMMIT >= 2800){
